@@ -1,3 +1,19 @@
+@media screen and (max-width: 736px){
+	.service-schedule-container {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (min-width: 737px){
+	.service-schedule-container {
+		padding-top: 0;
+	}
+}
+
+.service-schedule-container .box {
+	text-align: left;
+}
+
 /* Screens that are smaller than 980px */
 @media screen and (max-width: 980px){
 	#titleBar {
@@ -29,6 +45,7 @@
 	#banner {
 		background-position: top left, top left, center center;
 	}
+	/*Responsive Google Map*/
 }
 
 /* Screens that are larger than 980px */
@@ -38,7 +55,7 @@
 	}
 	#banner {
 		background-position: top left, top left, center left;
-	}
+	}	
 }
 
 body {
@@ -151,12 +168,36 @@ ul#iconList li {
 	list-style-type: none;
 }
 
+#location-and-schedule {}
+
+/*Responsive Google Map*/
+.google-map {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+
+.google-map iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position: absolute;
+}
+
 #footer {
 	background-color: #D0D4DC;
 }
 
 h2.major {
 	border-top: solid 5px #8c93a8;
+	color: white;
+	margin-bottom: 4em;
+}
+
+h2.major span {
+	background: #8c93a8;
 	color: white;
 }
 
@@ -172,3 +213,8 @@ ul.contact li a {
 	background: rgba(225, 206, 122, 0.75);
 	color: white;
 }
+
+#copyright .menu li {
+	border-color: #b9beca;
+}
+
