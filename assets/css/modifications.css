@@ -16,6 +16,12 @@
 
 /* Screens that are smaller than 980px */
 @media screen and (max-width: 980px){
+
+	#header {
+		display: block;
+		height: 0;
+	}
+
 	#titleBar {
 		height: 88px;
 		line-height: 88px;
