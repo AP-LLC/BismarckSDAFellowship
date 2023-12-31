@@ -16,6 +16,16 @@
 
 /* Screens that are smaller than 980px */
 @media screen and (max-width: 980px){
+
+	#header {
+		display: block;
+		height: 0;
+	}
+
+	#header .logo {
+		display: none;
+	}
+
 	#titleBar {
 		height: 88px;
 		line-height: 88px;
@@ -66,6 +76,11 @@ strong {
 	color: #8c93a8;
 }
 
+h3, form label {
+	color: #2c2a4a;
+	font-size: 1.25em;
+}
+
 #nav li a, #nav li span {
 	color: #2C2A4A;
 }
@@ -93,6 +108,17 @@ strong {
 .logo-text {
 	text-decoration: none;
 	color: #2C2A4A;
+}
+
+#fullscreen-menu-logo {
+    float: right;
+    width: 125px;
+    height: 125px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    z-index: 1001;
 }
 
 .dropotron.level-0:before {
@@ -207,6 +233,10 @@ h2.major span {
 
 ul.contact li a {
 	background: #8c93a8;
+}
+
+#contactForm .fields .field {
+	padding-bottom: 10px;
 }
 
 #copyright {
